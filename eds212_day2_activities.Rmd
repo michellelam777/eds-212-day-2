@@ -11,3 +11,30 @@ library(tidyverse)
 library(palmerpenguins)
 ```
 
+Find the derivative of $f(x)=x^2$ at x=3
+```{r}
+exp_1 <- expression(x^2)
+deriv_1 <- deriv(exp_1, "x")
+deriv_1
+x <- 3
+eval(deriv_1)
+```
+
+Find the derivative of $P(a)=2(3a+2)^4−5$ at a=1.2
+```{r}
+exp_2 <- expression(2 * (3 * a + 2)^4 - 5)
+deriv_2 <- deriv(exp_2, "a")
+deriv_2
+a <- 1.2
+eval(deriv_2)
+```
+
+Find the derivative of $g(t)=−4t/(t^2+1)^3$ at t=0
+```{r}
+exp_3 <- expression(-4 * t /(t^2 + 1)^ 3)
+deriv_3 <- deriv(exp_3, "t")
+deriv_3
+t <- 0
+eval(deriv_3)
+```
+
